@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 320px) {
+  .slick-dots {
+    bottom: -7px !important;
+    left: 30px !important;
+    text-align: left !important;
+  }
+}
+.slick-dots {
+  bottom: 50px !important;
+  left: 30px !important;
+  text-align: left !important;
+ 
+  li {
+    margin-right: 0px; /* Add margin between dots */
+  }
+
+  li button::before {
+    padding: 0 !important;
+    font-size: 9px !important; /* Adjust the size of the dot */
+   
+  }
+  li button:hover{
+    color: none;
+  }
+}
+.cta-learnmore:hover .button-icon:hover {
+  transform: translateX(4px); /* Adjust the value as per your requirement */
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
