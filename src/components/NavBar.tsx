@@ -52,7 +52,7 @@ const NavBar = () => {
           </div>
           <div className="flex">
             <div className="nav-buttons gap-4 self-center flex">
-              <Link type="button" className="rounded-md text-white border border-[#6938EF] bg-[#6938EF] hover:bg-[#8555FF] hover:border hover:border-[#6938EF] px-4 py-1.5 font-semibold request-demo" href="/demo">
+              <Link type="button" className=" rounded-md text-white border border-[#6938EF] bg-[#6938EF] hover:bg-[#8555FF] hover:border hover:border-[#6938EF] px-4 py-1.5 font-semibold request-demo" href="/demo">
                 Request Demo
               </Link>
               <button type="button" className="hidden md:hidden lg:block bg-transparent py-1.5 font-semibold hover:underline">

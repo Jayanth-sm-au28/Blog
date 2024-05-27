@@ -42,6 +42,6 @@ export async function POST(request: Request) {
   return new NextResponse('Not Found', { status: 404 });
 }
 
-// export const config = {
-//   matcher: '/:slug*'
-// };
+export const config = {
+  matcher: '/:slug*'
+};

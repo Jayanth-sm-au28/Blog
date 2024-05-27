@@ -8,7 +8,7 @@ const Page = ({ params }: { params: { id: string } }) => {
     useEffect(() => {
       // Redirect to the API endpoint with the provided id
       if (params.id) {
-        fetch(`http://localhost:3000/api/redirects`, {
+        fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/redirects`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
