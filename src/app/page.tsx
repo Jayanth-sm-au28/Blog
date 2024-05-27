@@ -33,7 +33,7 @@ export default function Home() {
       );
       const data = await response.json();
       // Assuming data structure
-      const carouselCards = data.data.attributes.Home[0].OCard;
+      const carouselCards = data.data.attributes.Home[0].ListOCard;
       setCarouselData(carouselCards);
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -60,7 +60,7 @@ export default function Home() {
       <NavBar />
       <div className="sm:p-2 md:p-6">
         <Slider {...settings} className="">
-          {carouselData.map((card: any) => (
+          {carouselData?.map((card: any) => (
             <CarouselCard key={card.id} data={card} />
           ))}
         </Slider>
