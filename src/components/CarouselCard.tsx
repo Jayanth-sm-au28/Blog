@@ -19,19 +19,19 @@ interface CarouselCardProps {
 
 const CarouselCard: React.FC<CarouselCardProps> = ({ data }) => {
   return (
-    <div className="flex lg:flex-row mt-20 flex-col lg:gap-20 gap-6 md:p-10 justify-between items-start bg-white p-4 rounded-md">
+    <div className="flex xl:flex-row mt-20 flex-col lg:gap-20 gap-6 justify-between items-start bg-white p-4 rounded-md">
       <div className="flex flex-col gap-4 basis-1/2">
         <div className="flex flex-col gap-3">
           <h2 className="lg:text-7xl text-5xl text-primary font-semibold text-[#6938Ef]">
             {data?.CardleftHeader}
           </h2>
-          <h3 className="text-2xl font-semibold border-b pb-4 md:text-2xl border-[#4A1FB8] text-left">
+          <h3 className="text-2xl font-semibold border-b pb-4 lg:text-2xl border-[#4A1FB8] text-left">
             {data?.leftHeaderDescription}
           </h3>
         </div>
         {data.divider && <div className="h-[1px] w-full bg-primary"></div>}
         <div className="flex flex-col gap-4">
-          <p className="text-gray-800 font-medium md:text-xl">
+          <p className="text-gray-800 font-medium md:text-base">
             {data?.leftDescripition}
           </p>
           <Link
@@ -53,7 +53,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({ data }) => {
         </div>
       </div>
       <div className="md:bg-primary bg-[#4A1FB8] rounded-xl p-8 flex flex-col justify-between items-start text-start gap-24 basis-2/3">
-        <p className=" text-white md:text-xl font-normal">
+        <p className=" text-white md:text-base font-normal">
           {data.rightHeaderDescripition}
         </p>
         <div className="flex flex-col gap-1 items-start justify-start text-start">

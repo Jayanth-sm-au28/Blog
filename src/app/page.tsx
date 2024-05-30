@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <div>
       <NavBar />
-      <div className="sm:p-2 md:p-6">
+      <div className="sm:p-2 lg:p-6">
         <Slider {...settings} className="">
           {carouselData?.map((card: any) => (
             <CarouselCard key={card.id} data={card} />
