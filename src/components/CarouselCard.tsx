@@ -31,7 +31,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({ data }) => {
         </div>
         {data.divider && <div className="h-[1px] w-full bg-primary"></div>}
         <div className="flex flex-col gap-4">
-          <p className="text-gray-800 font-medium md:text-base">
+          <p className="text-gray-800 font-medium text-base lg:text-lg">
             {data?.leftDescripition}
           </p>
           <Link

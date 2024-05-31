@@ -10,8 +10,8 @@
   }
 }
 .slick-dots {
-  bottom: 50px !important;
-  left: 30px !important;
+  bottom: 5px !important;
+  left: 5px !important;
   text-align: left !important;
  
   li {
